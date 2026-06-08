@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Vet - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 80px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .login-container h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .login-container button {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container"><span class="logo">🔒</span></div>
+        <div class="header-content">
+            <h1>Acesso Restrito - Clínica Veterinária</h1>
+            <p>Faça login para gerenciar pacientes e serviços.</p>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <h2>Acesso ao Sistema</h2>
+        <p id="message" style="color: red;"></p>
+        <form id="formLogin">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="func@clinica.com" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" value="123456" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <p style="margin-top: 15px;"><a href="cadastro_usuario.html">Ainda não tem conta? Cadastre-se aqui.</a></p>
+    </div>
+    <script src="auth.js"></script> 
+</body>
+</html>

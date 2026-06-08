@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Vet - Registro de Serviços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container"><span class="logo">🐕</span></div>
+        <div class="header-content">
+            <h1>Clínica Veterinária "O Fiel Amigo"</h1>
+            <p>🐾 Sistema de Gerenciamento de Serviços</p>
+        </div>
+    </header>
+    
+    <nav style="text-align: center; margin-bottom: 20px; padding: 10px; background-color: #e9ecef;">
+        <a href="index.html" style="margin-right: 20px; color: #007bff; text-decoration: none; font-weight: bold;">&#9664; Cadastro de Animais</a> | 
+        <a href="servicos.html" style="color: #007bff; text-decoration: none; font-weight: bold;">Registro de Serviços</a>
+    </nav>
+
+    <main>
+        <section class="form-container">
+            <h3>Registro de Novo Serviço</h3>
+            <form id="formRegistroServico">
+                <label for="idAnimal">Paciente:</label>
+                <select id="idAnimal" name="idAnimal" required>
+                    <option value="">-- Carregando Pacientes --</option>
+                </select>
+
+                <label for="tipo">Tipo de Serviço:</label>
+                <input type="text" id="tipo" name="tipo" required placeholder="Ex: Consulta Rotina, Vacinação, Exame de Sangue">
+
+                <label for="descricao">Descrição/Diagnóstico:</label>
+                <textarea id="descricao" name="descricao" rows="3"></textarea>
+
+                <label for="valor">Valor (R$):</label>
+                <input type="number" id="valor" name="valor" step="0.01" required min="0" value="0.00">
+
+                <button type="submit">✅ Registrar Serviço</button>
+            </form>
+        </section>
+
+        <section class="list-container">
+            <h3>Consultar Histórico de Serviços</h3>
+            
+            <label for="selectAnimalHistorico">Selecionar Paciente:</label>
+            <select id="selectAnimalHistorico" name="selectAnimalHistorico">
+                <option value="">-- Selecione para Ver o Histórico --</option>
+            </select>
+
+            <div id="historicoResultados" style="margin-top: 20px;">
+                <p>O histórico será carregado aqui.</p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="auth.js"></script>
+    <script src="script_servicos.js"></script> 
+</body>
+</html>

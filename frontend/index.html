@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Vet - Cadastro de Animal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container"><span class="logo">🐕</span></div>
+        <div class="header-content">
+            <h1>Clínica Veterinária "VetPlus"</h1>
+            <p>🐾 Sistema de Gerenciamento de Pacientes e Serviços</p>
+        </div>
+    </header>
+    
+    <nav style="text-align: center; margin-bottom: 20px; padding: 10px; background-color: #e9ecef;">
+        <a href="index.html" style="margin-right: 20px; color: #007bff; text-decoration: none; font-weight: bold;">Cadastro de Animais</a> | 
+        <a href="servicos.html" style="color: #007bff; text-decoration: none; font-weight: bold;">Registro de Serviços &#9654;</a>
+    </nav>
+
+    <div class="quick-actions">
+        <h3>Funcionalidades de Serviço</h3>
+        <a href="servicos.html" class="action-button register">
+            <span>&#128196; Registrar Novo Serviço</span>
+            <small>Consultas, Exames, Cirurgias</small>
+        </a>
+        <a href="servicos.html" class="action-button consult">
+            <span>&#128269; Consultar Histórico</span>
+            <small>Ver serviços realizados por paciente</small>
+        </a>
+    </div>
+
+    <main>
+        <section class="form-container">
+            <h3>Novo Paciente</h3>
+            <form id="formCadastroAnimal">
+                <label for="nome">Nome do Animal:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="especie">Espécie (Ex: Cão, Gato):</label>
+                <input type="text" id="especie" name="especie" required>
+                <label for="raca">Raça:</label>
+                <input type="text" id="raca" name="raca">
+                <label for="dataNascimento">Data de Nasc.:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento">
+                <label for="idCliente">ID do Dono (Opcional):</label>
+                <input type="number" id="idCliente" name="idCliente" value="1" required> 
+                <button type="submit">✅ Cadastrar Animal</button>
+            </form>
+        </section>
+
+        <section class="list-container">
+            <h3>Animais Cadastrados</h3>
+            <ul id="listaAnimais">
+                </ul>
+        </section>
+    </main>
+    
+    <script src="login.html"></script>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

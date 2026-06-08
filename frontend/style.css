@@ -1,0 +1,67 @@
+/* Estilos Gerais */
+body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; color: #333; }
+header { background-color: #007bff; color: white; padding: 15px; border-radius: 8px; margin-bottom: 20px; display: flex; align-items: center; gap: 20px; }
+.logo-container { padding: 10px; background-color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; }
+.logo { font-size: 36px; }
+.header-content h1 { margin: 0 0 5px 0; font-size: 1.8em; }
+.header-content p { margin: 0; font-style: italic; font-size: 0.9em; opacity: 0.8; }
+
+/* Estrutura Principal e Formulários/Listas */
+main { display: flex; gap: 30px; }
+.form-container, .list-container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); flex: 1; }
+.form-container h3, .list-container h3 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 0; }
+form label { display: block; margin-top: 10px; font-weight: bold; }
+form input, form select, form textarea, form button { width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ccc; box-sizing: border-box; }
+form button { background-color: #28a745; color: white; cursor: pointer; font-weight: bold; transition: background-color 0.3s; border: none;}
+form button:hover { background-color: #218838; }
+#listaAnimais { list-style: none; padding: 0; }
+#listaAnimais li { background: #e9ecef; padding: 12px; margin-bottom: 8px; border-radius: 4px; border-left: 5px solid #007bff; font-size: 0.9em; }
+
+/* Estilo para a tabela de histórico de serviços */
+.table-historico { width: 100%; border-collapse: collapse; margin-top: 15px; }
+.table-historico th, .table-historico td { border: 1px solid #ccc; padding: 8px; text-align: left; font-size: 0.85em; }
+.table-historico th { background-color: #007bff; color: white; }
+
+/* --- Estilos para o Bloco de Ações Rápidas (index.html) --- */
+.quick-actions { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 25px; text-align: center; }
+.quick-actions h3 { color: #007bff; margin-top: 0; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.action-button { display: inline-block; padding: 15px 30px; margin: 10px; border-radius: 6px; text-decoration: none; color: white; font-weight: bold; transition: background-color 0.3s; min-width: 200px; text-align: left; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+.action-button span { display: block; font-size: 1.1em; margin-bottom: 5px; }
+.action-button small { display: block; font-size: 0.8em; opacity: 0.8; }
+.action-button.register { background-color: #28a745; }
+.action-button.consult { background-color: #17a2b8; }
+.action-button.register:hover { background-color: #218838; }
+.action-button.consult:hover { background-color: #138496; }
+
+/* --- Estilos para Páginas de Login e Cadastro (login.html e cadastro_usuario.html) --- */
+
+/* Estilos de container específicos para login/cadastro (para centralizar) */
+.login-container, .register-container {
+    max-width: 400px; /* Reduz a largura para ficar centralizado e focado */
+    margin: 80px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Garante que o botão de Login tenha a cor azul padrão da clínica */
+.login-container button {
+    background-color: #007bff;
+}
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Garante que o botão de Cadastro tenha a cor verde padrão */
+.register-container button {
+    background-color: #28a745;
+}
+.register-container button:hover {
+    background-color: #218838;
+}
+
+.login-container a, .register-container a {
+    color: #007bff;
+}
